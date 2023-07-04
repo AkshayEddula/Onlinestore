@@ -22,6 +22,7 @@ export const Main = () => {
     
     const [currentstate, setCurrentstate] = useState(1);
     const [isTransitioning, setIsTransitioning] = useState(false);
+    const [isImagesLoaded, setIsImagesLoaded] = useState(false);
 
     const imagePaths = {
         1: i1,
@@ -50,6 +51,25 @@ export const Main = () => {
         3: i15,
         4: i16,
     }
+
+    useEffect(() => {
+        // Preload images
+        const preloadImages = () => {
+            const images = Object.values(imagePaths2).map((path) => {
+                const image = new Image();
+                image.src = path;
+                return image;
+            });
+    
+            Promise.all(images.map((image) => new Promise((resolve) => {
+                image.onload = resolve;
+            })))
+                .then(() => setIsImagesLoaded(true));
+        };
+    
+        // Start preloading images
+        preloadImages();
+    });
 
     useEffect(() => {
         const interval = setInterval(() => {
