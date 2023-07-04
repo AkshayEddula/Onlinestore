@@ -57,7 +57,7 @@ export const Main = () => {
                 setTimeout(() => {
                 setCurrentstate((prevImage) => (prevImage === Object.keys(imagePaths).length ? 1 : prevImage + 1));
                 setIsTransitioning(false);
-            }, 800); // Change the transition duration (in milliseconds) as needed
+            }, 1000); // Change the transition duration (in milliseconds) as needed
         }, 2000);   
         
         return () => clearInterval(interval);
