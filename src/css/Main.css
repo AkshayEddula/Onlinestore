@@ -28,25 +28,25 @@
 .slider-wrapper.transition > div {
     transform: translateX(-100%);
     opacity: 0.5;
-    transition: transform 1.5s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .slider-wrapper2.transition > div {
     transform: translateX(100%);
     opacity: 0.5;
-    transition: transform 1.5s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .slider-wrapper3.transition > div {
     transform: translateY(100%);
     opacity: 0.5;
-    transition: transform 1.5s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .slider-wrapper4.transition > div {
     transform: translateX(-100%);
     opacity: 0.5;
-    transition: transform 1.5s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .btn1 {
