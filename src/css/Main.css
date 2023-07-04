@@ -1,6 +1,7 @@
 
 #imgs {
     height: 700px;
+    width: 630px;
     max-height: 600px;
 }
 
@@ -50,9 +51,9 @@
 
 .btn1 {
     position: absolute;
-    left: 50%;
+    left: 45%;
     right: 0;
     top: 0;
     bottom: 0;
-    transform: translateY(60%);
+    transform: translateY(70%);
 }
